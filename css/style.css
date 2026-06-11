@@ -193,6 +193,9 @@
         padding: 10px 30px;
         font-family: hahmlet !important;
         transition: left 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         ul {
             list-style: none;
@@ -200,12 +203,7 @@
     }
 
     .sidebar_symbol {
-        bottom: 0;
-        margin-top: 250px;
         text-align: center;
-        left: 50%;
-        position: relative;
-        transform: translateX(-50%);
     }
 
     .sidebar_submenu {
@@ -608,15 +606,16 @@
                 position: absolute;
                 top: -50px;
                 justify-content: space-between;
-
+                justify-content: center;
             }
 
             .sub_title {
-                width: 55%;
+                width: 47%;
                 text-align: center;
 
                 span {
-                    font-size: clamp(7px, calc(-36px + 3vw), 20px);
+                    display: block;
+                    font-size: clamp(11px, calc(-36px + 3vw), 20px);
                     background: #fff;
                     padding: 10px 20px;
                     color: var(--river);
@@ -725,9 +724,9 @@
                     border-radius: 10px;
 
                     .split_txt_title {
-                        font-size: clamp(15px, calc(12px + 0.7vw), 30px);
+                        font-size: clamp(11px, calc(0px + 1vw), 30px);
                         padding-block: clamp(10px, calc(10rem + 1vw), 20px);
-                        padding-inline: clamp(4px, calc(4px + 1vw), 20px);
+                        padding-inline: clamp(4px, calc(1px + 1vw), 20px);
                         color: var(--earth);
                         background: var(--lemon-daffodil);
                         font-weight: bold;
@@ -737,7 +736,7 @@
                     }
 
                     .split_txt_caption {
-                        font-size: 20px;
+                        font-size: clamp(11px, calc(-36px + 3vw), 20px);
                         padding: 30px 20px;
                     }
                 }
