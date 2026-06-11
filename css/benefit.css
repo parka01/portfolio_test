@@ -4,7 +4,7 @@
 @media screen and (max-width: 750px) {
     .main {
         padding-inline: 20px;
-        overflow: clip;
+        overflow-x: clip;
 
         .box_assets_top,
         .box_assets_middle,
