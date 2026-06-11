@@ -1,2 +1,2 @@
 # newB.tria
-Alpha test website for a personal use
+Alpha test website for a personal use.
