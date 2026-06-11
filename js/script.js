@@ -25,7 +25,7 @@ $(
         });
         window.addEventListener('scroll', () => {
             const scrollValue = window.scrollY * 1.5;
-            const horizontal = document.getElementById("main_02");
+            const horizontal = document.getElementById("wrap_photo");
             if (scrollValue < 9700) {
                 horizontal.style.transform = `translateX(${-scrollValue}px)`;
             } else {
