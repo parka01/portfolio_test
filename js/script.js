@@ -25,11 +25,9 @@ $(
         });
         window.addEventListener('scroll', () => {
             const scrollValue = window.scrollY * 1.5;
-            const horizontal = document.getElementById("very_long_horizontal");
-            console.log("value:" + scrollValue);
+            const horizontal = document.getElementById("main_02");
             if (scrollValue < 9700) {
                 horizontal.style.transform = `translateX(${-scrollValue}px)`;
-                console.log("it came");
             } else {
                 image.style.transform = "";
             }
@@ -38,8 +36,7 @@ $(
 
         chips.forEach(chip => {
             const x = Math.random() * window.innerWidth;
-            const y = Math.random() * 200; // footer height area
-
+            const y = Math.random() * 200; 
             chip.style.left = x + "px";
             chip.style.top = y + "px";
         });
@@ -47,14 +44,12 @@ $(
         // Responsive Mobile  version  sidebar
         // 반응형 모바일 용 사이드바
         $(document).on("click", ".icon_menu", function () {
-            console.log("clicked!");
             $(".sidebar").animate({
                 right: "0",
             }, 1000);
             $(this).fadeOut();
         });
         $(document).on("click", ".nav_icon_close", function () {
-            console.log("clicked! as well!");
             $(".sidebar").animate({
                 right: "-350",
             }, 1000);
