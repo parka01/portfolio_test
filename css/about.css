@@ -39,6 +39,7 @@
     background: url(../images/about_plogging.png) center top clamp(0px, calc(0px + -2vw), -30px);
     background-size: cover;
     height: 500px;
+    overflow-x: clip;
 }
 
 .about_page #banner_logo {
